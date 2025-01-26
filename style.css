@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section{
+    max-width: 30rem;
+    width: 100%;
+    display: flex;
+
+    margin: 5rem;
+    flex-direction: column;
+    gap: 1.4rem;
+    align-items: center;
+    padding: 3rem;
+    background-color: rgb(247, 247, 247);
+    border: 1px solid rgb(240, 240, 240);
+    border-radius: 6px;
+}
+    
+h1{
+    color: rgb(23, 190, 98);
+}
+.top-div{
+    
+    display: flex;
+    gap: 1rem;
+}
+.top-div .todo-input{
+    height: 30px;
+    width: 200px;
+    border: 1px solid rgb(30, 133, 9) ;
+    border-radius: 5px;
+    background-color: transparent;
+}
+.top-div .add-btn{
+    width: 70px;
+    border: 1px solid rgb(30, 133, 9) ;
+    color: rgb(30, 133, 9);
+    background-color: transparent;
+    border-radius: 5px;
+}
+.top-div .add-btn:hover{
+    background-color: rgb(30, 133, 9);
+    color: #ffffff;
+    transition: 300ms;
+}
+
+.todo-list .todo-item{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.todo-list .todo-item .todo-text{
+    color: red;
+}
+.del-btn{
+    color: red;
+    border: 1px solid red;
+    background-color: transparent;
+    border-radius: 4px;
+    width: 55px;
+    height: 23px;
+}
+.del-btn:hover{
+    color: white;
+    background-color: red;
+    transition: 200ms;
+
+}
+
+.todo-list .todo-item.completed .todo-text{
+
+    color: green;
+    text-decoration: line-through;
+
+}
